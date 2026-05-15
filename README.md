@@ -1,27 +1,23 @@
+<p><img src="macos/assets/app-icon.png" width="128" height="128" alt="Shelf app icon"></p>
 
-<p align="center">
-  <img src="macos/assets/app-icon.png" width="128" height="128" alt="Shelf app icon">
+<h1>Shelf</h1>
+
+<p>An audiobook player that syncs with Google Drive.<br>Stream or download. Pick up where you left off.</p>
+
+<p><strong>macOS</strong> · <strong>iOS</strong> · <strong>Android</strong></p>
+
+<p>
+  <img src="https://img.shields.io/badge/Swift-f05138" alt="Swift">
+  <img src="https://img.shields.io/badge/SwiftUI-0066cc" alt="SwiftUI">
+  <img src="https://img.shields.io/badge/Kotlin-7f52ff" alt="Kotlin">
+  <img src="https://img.shields.io/badge/Jetpack%20Compose-4285f4" alt="Jetpack Compose">
 </p>
 
-<h1 align="center">Shelf</h1>
-
-<p align="center">An audiobook player that syncs with Google Drive.<br>Stream or download. Pick up where you left off.</p>
-
-<p align="center"><strong>macOS</strong> · <strong>iOS</strong> · <strong>Android</strong></p>
-
----
-
-<p align="center">
-  <img src="macos/shelf-screenshot.png" width="100%" alt="Shelf on macOS">
-</p>
-
-<p align="center">
-  <img src="ios/assets/screenshot.png" width="100%" alt="Shelf on iOS">
-</p>
-
----
+![Shelf on macOS](macos/shelf-screenshot.png)
 
 Shelf is a cross-platform audiobook player that reads from your Google Drive. Stream or download, pick up on any device where you left off on another. Ships on macOS, iOS, and Android.
+
+![Shelf on iOS](ios/assets/screenshot.png)
 
 ## Features
 
