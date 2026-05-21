@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		13DD9783DAAAE7F89D100CD7 /* CoverArtService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AC51B04DEE6376CC7236D0 /* CoverArtService.swift */; };
 		1B2877A667965F4D73A53566 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA03272DDAF18457B12D3FA /* SignInView.swift */; };
+		26A3D21A3B7E3E9A5EDB675E /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = D7F35D03E57987607F326989 /* PrivacyInfo.xcprivacy */; };
 		2FB7EE6D9F4C290419D53D85 /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1A2210867FEEB0365B1969 /* DownloadManager.swift */; };
 		37DFA37C4B9459C8BA4AF801 /* VideoLayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7972B7852AC484C467B7F497 /* VideoLayerView.swift */; };
 		39AFD31BEA21EBA6A3096A66 /* ShelfIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E9B02CBD962CE4217FDFBB /* ShelfIOSApp.swift */; };
@@ -41,6 +42,7 @@
 		E2ED917558C3A723B5AD317E /* BookGridCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9D1AC737BD17EE98B89B7D /* BookGridCardView.swift */; };
 		E4649ED259F2B5776106E866 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDED18B1876DDAE51CD9E495 /* AppColors.swift */; };
 		E6C8204777CCAC72038B7B1E /* AppAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9E776AD6D6D76C2718B922 /* AppAnimation.swift */; };
+		E85126268FCC0FABF077A461 /* AppLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72AC4C54BF785C8C6DAA164 /* AppLinks.swift */; };
 		F3BC6AE07A8CABD6DA8D81FC /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E7275788F77AE254BB7A50A7 /* GoogleSignInSwift */; };
 		FBB5A71755C2561166E1E476 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EE2177D04BFF26AE03848C /* VideoPlayerView.swift */; };
 /* End PBXBuildFile section */
@@ -80,8 +82,10 @@
 		BC9E776AD6D6D76C2718B922 /* AppAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAnimation.swift; sourceTree = "<group>"; };
 		BE9D1AC737BD17EE98B89B7D /* BookGridCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookGridCardView.swift; sourceTree = "<group>"; };
 		CFB4D33520CD30967C79441D /* GoogleDriveService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleDriveService.swift; sourceTree = "<group>"; };
+		D7F35D03E57987607F326989 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		DDED18B1876DDAE51CD9E495 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		F469BCCCB00700305C8EAE85 /* ProgressExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressExporter.swift; sourceTree = "<group>"; };
+		F72AC4C54BF785C8C6DAA164 /* AppLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLinks.swift; sourceTree = "<group>"; };
 		F8794D0C22562AA8EC166265 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -144,6 +148,7 @@
 			children = (
 				BC9E776AD6D6D76C2718B922 /* AppAnimation.swift */,
 				DDED18B1876DDAE51CD9E495 /* AppColors.swift */,
+				F72AC4C54BF785C8C6DAA164 /* AppLinks.swift */,
 				634AF255440141E64F00B85F /* ViewModifiers.swift */,
 			);
 			path = Utilities;
@@ -155,6 +160,7 @@
 				3BD9B664A5DA5B4631D194AD /* AppDelegate.swift */,
 				8D2C30AB80479AEB759242F4 /* Assets.xcassets */,
 				F8794D0C22562AA8EC166265 /* Info.plist */,
+				D7F35D03E57987607F326989 /* PrivacyInfo.xcprivacy */,
 				B1B6C66FD91F8672F88E1FFA /* ShelfIOS.entitlements */,
 				72E9B02CBD962CE4217FDFBB /* ShelfIOSApp.swift */,
 				DC281D72893430DDCCB89824 /* Models */,
@@ -263,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF7D7F3722BA00C13FA8C0E6 /* Assets.xcassets in Resources */,
+				26A3D21A3B7E3E9A5EDB675E /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +283,7 @@
 				E6C8204777CCAC72038B7B1E /* AppAnimation.swift in Sources */,
 				E4649ED259F2B5776106E866 /* AppColors.swift in Sources */,
 				4BD13F0146F91459A13636E1 /* AppDelegate.swift in Sources */,
+				E85126268FCC0FABF077A461 /* AppLinks.swift in Sources */,
 				D1B1752FFF42CF4B1FC052FA /* AppViewModel.swift in Sources */,
 				AE5D39C04370C09AEA263002 /* AudioPlayerService.swift in Sources */,
 				40A6C07FFC1646307B9C640C /* AudiobookModel.xcdatamodeld in Sources */,

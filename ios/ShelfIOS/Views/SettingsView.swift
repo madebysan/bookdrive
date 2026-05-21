@@ -275,6 +275,14 @@ struct SettingsView: View {
                 Text(appVersion)
                     .foregroundStyle(.secondary)
             }
+
+            Link(destination: AppLinks.support) {
+                Label("Support", systemImage: "questionmark.circle")
+            }
+
+            Link(destination: AppLinks.privacy) {
+                Label("Privacy Policy", systemImage: "hand.raised")
+            }
         }
     }
 
