@@ -103,6 +103,14 @@ Upload App Store metadata without binary or screenshots
 
 Upload App Privacy answers from fastlane/app_privacy_details.json
 
+### ios upload_screenshots
+
+```sh
+[bundle exec] fastlane ios upload_screenshots
+```
+
+Upload App Store screenshots without submitting for review
+
 ### ios submit_app_store_review
 
 ```sh

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		003DD785E91DEACFE469A069 /* AppStoreScreenshotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8C8F79D69D5A336E2625E9 /* AppStoreScreenshotView.swift */; };
 		13DD9783DAAAE7F89D100CD7 /* CoverArtService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64AC51B04DEE6376CC7236D0 /* CoverArtService.swift */; };
 		1B2877A667965F4D73A53566 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA03272DDAF18457B12D3FA /* SignInView.swift */; };
 		26A3D21A3B7E3E9A5EDB675E /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = D7F35D03E57987607F326989 /* PrivacyInfo.xcprivacy */; };
@@ -58,6 +59,7 @@
 		364E0926878081F2134854ED /* Bookmark+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bookmark+Extensions.swift"; sourceTree = "<group>"; };
 		392E7872609876429E2F0436 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		3BD9B664A5DA5B4631D194AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3D8C8F79D69D5A336E2625E9 /* AppStoreScreenshotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreScreenshotView.swift; sourceTree = "<group>"; };
 		48A9345A8992202B7CCC01BD /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
 		4CE21921522EA87650B66957 /* FolderPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderPickerView.swift; sourceTree = "<group>"; };
 		5421359E4EDA3D8EAAB74BA9 /* BookRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRowView.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 		C048AA8B9F1FA31FEDDBCA07 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3D8C8F79D69D5A336E2625E9 /* AppStoreScreenshotView.swift */,
 				BE9D1AC737BD17EE98B89B7D /* BookGridCardView.swift */,
 				5421359E4EDA3D8EAAB74BA9 /* BookRowView.swift */,
 				4CE21921522EA87650B66957 /* FolderPickerView.swift */,
@@ -284,6 +287,7 @@
 				E4649ED259F2B5776106E866 /* AppColors.swift in Sources */,
 				4BD13F0146F91459A13636E1 /* AppDelegate.swift in Sources */,
 				E85126268FCC0FABF077A461 /* AppLinks.swift in Sources */,
+				003DD785E91DEACFE469A069 /* AppStoreScreenshotView.swift in Sources */,
 				D1B1752FFF42CF4B1FC052FA /* AppViewModel.swift in Sources */,
 				AE5D39C04370C09AEA263002 /* AudioPlayerService.swift in Sources */,
 				40A6C07FFC1646307B9C640C /* AudiobookModel.xcdatamodeld in Sources */,

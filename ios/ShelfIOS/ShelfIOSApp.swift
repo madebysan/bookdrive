@@ -18,15 +18,20 @@ struct ShelfIOSApp: App {
 
     var body: some Scene {
         WindowGroup {
-            RootView()
-                .environment(\.managedObjectContext, persistence.container.viewContext)
-                .environmentObject(auth)
-                .environmentObject(appVM)
-                .preferredColorScheme(preferredColorScheme)
-                .onOpenURL { url in
-                    // Handle Google Sign-In OAuth redirect
-                    _ = auth.handleURL(url)
-                }
+            if let screenshotMode = AppStoreScreenshotMode.current {
+                AppStoreScreenshotRootView(mode: screenshotMode)
+                    .preferredColorScheme(.light)
+            } else {
+                RootView()
+                    .environment(\.managedObjectContext, persistence.container.viewContext)
+                    .environmentObject(auth)
+                    .environmentObject(appVM)
+                    .preferredColorScheme(preferredColorScheme)
+                    .onOpenURL { url in
+                        // Handle Google Sign-In OAuth redirect
+                        _ = auth.handleURL(url)
+                    }
+            }
         }
     }
 }
