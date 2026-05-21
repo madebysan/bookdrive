@@ -55,6 +55,14 @@ Set App Store pricing to free with USA as the base territory
 
 Set App Store availability for all current and future territories
 
+### ios set_app_store_us_only
+
+```sh
+[bundle exec] fastlane ios set_app_store_us_only
+```
+
+Set App Store availability to United States only
+
 ### ios build_simulator
 
 ```sh
