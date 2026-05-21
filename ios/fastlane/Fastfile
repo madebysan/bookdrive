@@ -10,6 +10,7 @@ ROOT = File.expand_path("..", __dir__)
 PROJECT = File.join(ROOT, "ShelfIOS.xcodeproj")
 SCHEME = "ShelfIOS"
 APP_IDENTIFIER = "com.madebysan.ShelfIOS"
+APP_STORE_APPLE_ID = "6771934035"
 APP_NAME = "Shelf: Audiobook Player"
 SKU = "shelf-ios"
 PROFILE_NAME = "#{APP_IDENTIFIER} AppStore"
