@@ -15,5 +15,8 @@ xcuserdata/
 # SPM
 .build/
 
+# Fastlane
+fastlane/report.xml
+
 # CocoaPods (if added later)
 Pods/
