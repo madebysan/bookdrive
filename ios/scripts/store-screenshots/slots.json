@@ -1,0 +1,69 @@
+{
+  "app": {
+    "version_project": "ShelfIOS.xcodeproj",
+    "build_project": "ShelfIOS.xcodeproj",
+    "xcodegen_spec": null,
+    "scheme": "ShelfIOSScreenshots",
+    "configuration": "Debug",
+    "product": "ShelfIOS",
+    "bundle_id": "com.madebysan.ShelfIOS",
+    "simulator_bundle_id": "com.madebysan.ShelfIOS",
+    "capture_inputs": ["ShelfIOS", "ShelfIOS.xcodeproj", "ShelfIOSUITests", "project.yml"]
+  },
+  "theme": {
+    "background": ["#F4EAD2", "#E9D6AA"],
+    "glow": "rgb(205 143 47 / 0.28)",
+    "text": "#2E2110",
+    "secondary": "#6B5A40",
+    "accent": "#1B6865",
+    "kicker": "#C34C15",
+    "heading_font": "/System/Library/Fonts/NewYork.ttf",
+    "heading_weight": 600,
+    "kicker_font": "/System/Library/Fonts/SFNS.ttf",
+    "kicker_weight": 600
+  },
+  "locale": "en-US",
+  "screenshots_root": "fastlane/screenshots",
+  "provenance": "fastlane/screenshots-provenance.json",
+  "canvas": { "width": 1320, "height": 2868 },
+  "simulator": "iPhone 17 Pro Max",
+  "appearance": "light",
+  "test": "ShelfIOSUITests/StoreScreenshots/testCaptureStoreSet",
+  "slots": [
+    {
+      "file": "1_library.png",
+      "capture": "library",
+      "kicker": "Your own audiobooks",
+      "headline": "Your Drive folder, as a *library*",
+      "sub": "Covers, genres and progress for the files you already keep in Google Drive."
+    },
+    {
+      "file": "2_player.png",
+      "capture": "player",
+      "kicker": "Pick up where you left off",
+      "headline": "Your place in every *book*",
+      "sub": "Chapters, sleep timer, playback speed and lock-screen controls."
+    },
+    {
+      "file": "3_genres.png",
+      "capture": "genres",
+      "kicker": "Browse",
+      "headline": "Find the next one by *genre*",
+      "sub": "Bookdrive sorts a big folder into shelves you can flip through."
+    },
+    {
+      "file": "4_offline.png",
+      "capture": "list",
+      "kicker": "Offline",
+      "headline": "Download once, listen *anywhere*",
+      "sub": "Downloads stay on your iPhone and play without a connection."
+    },
+    {
+      "file": "5_private.png",
+      "capture": "signIn",
+      "kicker": "Private by design",
+      "headline": "No account, *no server*",
+      "sub": "Bookdrive only reads your Drive. It can't change or delete a thing."
+    }
+  ]
+}

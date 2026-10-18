@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22225" systemVersion="24A335" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="NO" userDefinedModelVersionIdentifier="">
+    <entity name="Book" representedClassName="Book" syncable="YES" codeGenerationType="class">
+        <attribute name="addedDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="author" optional="YES" attributeType="String"/>
+        <attribute name="coverArtData" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>
+        <attribute name="driveFileId" optional="YES" attributeType="String"/>
+        <attribute name="duration" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="filePath" optional="YES" attributeType="String" defaultValueString=""/>
+        <attribute name="fileModDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="fileSize" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="genre" optional="YES" attributeType="String"/>
+        <attribute name="hasChapters" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="isCompleted" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="isDownloaded" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="isHidden" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="isStarred" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="subfolderName" optional="YES" attributeType="String"/>
+        <attribute name="metadataFetchDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="metadataLoaded" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="lastPlayedDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="playbackPosition" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="rating" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="coverFromAPI" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="coverLookupAttempted" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="year" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="bookmarks" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Bookmark" inverseName="book" inverseEntity="Bookmark"/>
+        <relationship name="library" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Library" inverseName="books" inverseEntity="Library"/>
+    </entity>
+    <entity name="Bookmark" representedClassName="Bookmark" syncable="YES" codeGenerationType="class">
+        <attribute name="createdDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="note" optional="YES" attributeType="String"/>
+        <attribute name="timestamp" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="book" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Book" inverseName="bookmarks" inverseEntity="Book"/>
+    </entity>
+    <entity name="Library" representedClassName="Library" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="folderPath" optional="YES" attributeType="String" defaultValueString=""/>
+        <attribute name="folderBookmark" optional="YES" attributeType="Binary"/>
+        <attribute name="createdDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="lastOpenedDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="books" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Book" inverseName="library" inverseEntity="Book"/>
+    </entity>
+</model>

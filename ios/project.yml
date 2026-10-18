@@ -1,0 +1,90 @@
+name: ShelfIOS
+options:
+  bundleIdPrefix: com.madebysan
+  deploymentTarget:
+    iOS: "17.0"
+  xcodeVersion: "16.0"
+  generateEmptyDirectories: true
+
+packages:
+  GoogleSignIn:
+    url: https://github.com/google/GoogleSignIn-iOS
+    from: "8.0.0"
+
+targets:
+  ShelfIOS:
+    type: application
+    platform: iOS
+    sources:
+      - ShelfIOS
+    settings:
+      base:
+        INFOPLIST_FILE: ShelfIOS/Info.plist
+        GENERATE_INFOPLIST_FILE: NO
+        CODE_SIGN_ENTITLEMENTS: ShelfIOS/ShelfIOS.entitlements
+        PRODUCT_BUNDLE_IDENTIFIER: com.madebysan.ShelfIOS
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        DEVELOPMENT_TEAM: QAMM2A6WRQ
+        SWIFT_VERSION: "5.9"
+        TARGETED_DEVICE_FAMILY: "1"
+        SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD: YES
+    dependencies:
+      - package: GoogleSignIn
+        product: GoogleSignIn
+      - package: GoogleSignIn
+        product: GoogleSignInSwift
+
+  ShelfIOSTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - ShelfIOSTests
+    dependencies:
+      - target: ShelfIOS
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        PRODUCT_BUNDLE_IDENTIFIER: com.madebysan.ShelfIOSTests
+        DEVELOPMENT_TEAM: QAMM2A6WRQ
+        SWIFT_VERSION: "5.9"
+        TARGETED_DEVICE_FAMILY: "1"
+
+  # App Store screenshot capture (scripts/store-screenshots). Not part of the unit-test scheme.
+  ShelfIOSUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - ShelfIOSUITests
+    dependencies:
+      - target: ShelfIOS
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        PRODUCT_BUNDLE_IDENTIFIER: com.madebysan.ShelfIOSUITests
+        DEVELOPMENT_TEAM: QAMM2A6WRQ
+        SWIFT_VERSION: "5.9"
+        TARGETED_DEVICE_FAMILY: "1"
+        TEST_TARGET_NAME: ShelfIOS
+
+schemes:
+  ShelfIOS:
+    build:
+      targets:
+        ShelfIOS: all
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets:
+        - ShelfIOSTests
+    archive:
+      config: Release
+  ShelfIOSScreenshots:
+    build:
+      targets:
+        ShelfIOS: all
+    test:
+      config: Debug
+      targets:
+        - ShelfIOSUITests

@@ -1,0 +1,90 @@
+<!doctype html>
+<!-- App Store frame template, shared by every app. frame.py fills the dollar-sign fields from slots.json. -->
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @font-face { font-family: "Heading"; src: url("$heading_font"); font-weight: 100 900; }
+  @font-face { font-family: "Kicker"; src: url("$kicker_font"); font-weight: 100 900; }
+
+  :root {
+    --bg-top: $bg_top;
+    --bg-bottom: $bg_bottom;
+    --glow: $glow;
+    --text: $text;
+    --secondary: $secondary;
+    --accent: $accent;
+    --kicker: $kicker_color;
+    --canvas-w: ${canvas_w}px;
+    --canvas-h: ${canvas_h}px;
+    /* Device geometry: screen keeps the capture's aspect ratio. */
+    --screen-h: 2022px;
+    --screen-w: calc(var(--screen-h) * $capture_w / $capture_h);
+    --bezel: 18px;
+    --screen-radius: calc(var(--screen-w) * 0.141);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: var(--canvas-w); height: var(--canvas-h); overflow: hidden; }
+  body {
+    background:
+      radial-gradient(1200px 900px at 50% 108%, var(--glow), transparent 70%),
+      linear-gradient(180deg, var(--bg-top), var(--bg-bottom));
+    color: var(--text);
+    font-family: "Heading", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .caption {
+    position: absolute; top: 0; left: 0; right: 0; height: 700px;
+    padding: 150px 110px 0;
+    text-align: center;
+  }
+  .kicker {
+    font-family: "Kicker", sans-serif; font-weight: $kicker_weight;
+    font-size: 34px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--kicker);
+  }
+  h1 {
+    margin-top: 30px;
+    font-weight: $heading_weight; font-size: 104px; line-height: 1.04; letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+  h1 em { font-style: normal; color: var(--accent); }
+  .sub {
+    margin-top: 34px;
+    font-weight: 400; font-size: 44px; line-height: 1.3;
+    color: var(--secondary);
+    text-wrap: balance;
+  }
+  .device {
+    position: absolute; top: 700px; left: 50%; transform: translateX(-50%);
+    width: calc(var(--screen-w) + var(--bezel) * 2);
+    height: calc(var(--screen-h) + var(--bezel) * 2);
+    padding: var(--bezel);
+    border-radius: calc(var(--screen-radius) + var(--bezel));
+    background: linear-gradient(160deg, rgb(78 86 92), rgb(34 38 41) 40%, rgb(58 64 68));
+    box-shadow:
+      inset 0 0 0 2px rgb(255 255 255 / 0.10),
+      inset 0 0 0 7px rgb(8 9 10),
+      0 60px 120px rgb(0 0 0 / 0.55);
+  }
+  .screen {
+    position: relative; width: 100%; height: 100%;
+    border-radius: var(--screen-radius); overflow: hidden; background: #000;
+  }
+  .screen img { display: block; width: 100%; height: 100%; }
+  .island {
+    position: absolute; top: calc(var(--screen-w) * 0.026); left: 50%; transform: translateX(-50%);
+    width: calc(var(--screen-w) * 0.286); height: calc(var(--screen-w) * 0.084);
+    border-radius: 999px; background: #000;
+  }
+</style>
+</head>
+<body>
+  <div class="caption">
+    <div class="kicker">$kicker</div>
+    <h1>$headline</h1>
+    <p class="sub">$sub</p>
+  </div>
+  <div class="device"><div class="screen"><img src="$capture" alt=""><div class="island"></div></div></div>
+</body>
+</html>

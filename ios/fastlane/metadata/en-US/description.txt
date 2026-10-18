@@ -1,0 +1,15 @@
+Bookdrive is an audiobook player for the files you already keep in Google Drive.
+
+Connect your Google Drive, choose the folder where your audiobooks live, then stream or download them for offline listening. Bookdrive remembers your position, keeps background audio going, supports lock-screen controls, and helps organize large libraries without moving files into a new service.
+
+Features:
+
+- Stream audiobooks from Google Drive
+- Download files for offline listening
+- Resume from your last position
+- Background playback and lock-screen controls
+- Chapters, sleep timer, and playback speed
+- Cover lookup from public book databases
+- Progress export and import
+
+Bookdrive is for personal media libraries. It does not include, sell, or distribute audiobook content.

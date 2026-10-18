@@ -1,0 +1,25 @@
+{
+  "commit": "a80265ffe00c8c38c63ab4be0563a3c41ecc95bd",
+  "branch": "main",
+  "version": "1.0",
+  "build": "1",
+  "bundle_id": "com.madebysan.ShelfIOS",
+  "uncommitted_capture_inputs": [],
+  "uncommitted_captions_or_template": false,
+  "app_store_version": "not on the App Store",
+  "checked_at": "2026-10-18T19:01:13+00:00",
+  "simulator": "iPhone 17 Pro Max",
+  "simulator_udid": "B8032729-6AE3-4D53-B208-0A6B40C7EC91",
+  "runtime": "iOS-26-5",
+  "xcode": "Xcode 27.0",
+  "configuration": "Debug",
+  "appearance": "light",
+  "run": "run-20261018-150113",
+  "screenshots": {
+    "1_library.png": "83fcbebd38a590866953c88f4d5d79760b459f8a624e5deee22a8b2f98980107",
+    "2_player.png": "2bab70e5e33c6a83b0f07a6be7fbb657a703ad3d6dc9b2fea511b47bb198bed6",
+    "3_genres.png": "aa3756c175c6006d9e01b4c2536cf1060bbaadaafffbcf6b68e0455e834f02d7",
+    "4_offline.png": "fd0508101d4a80377d2c185cfd9a43997be3536c4516b0739aef9c563141c75e",
+    "5_private.png": "5269d7aa3a16fb81b8d569ae0b489b31ff4798b78a3edd446b5ff7e203bc3ee9"
+  }
+}
